@@ -1,0 +1,5 @@
+"Primero aplicar esta linea de codigo para instalar las bibliotecasm si ya las tienes ignorela"
+pip install -r requirements.txt
+
+"Abra la terminal y escribe esto para corre el main y para seleccionar su .csv"
+python main.py datos.csv
