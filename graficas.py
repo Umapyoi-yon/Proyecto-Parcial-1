@@ -11,15 +11,15 @@ Fecha: [5/10/2026]
 import matplotlib.pyplot as plt
 import numpy as np
 
-
-def graficar_ajuste(x, y, m, b, ecuacion):
-    """Muestra la dispersion de puntos con la recta de ajuste superpuesta.
+"""Muestra la dispersion de puntos con la recta de ajuste superpuesta.
 
     Args:
         x, y (np.ndarray): Muestras originales.
         m, b (float): Pendiente e intercepto de la recta.
         ecuacion (str): Texto de la ecuacion a mostrar en la grafica.
-    """
+"""
+def graficar_ajuste(x, y, m, b, ecuacion):
+    
     x_recta = np.linspace(np.min(x), np.max(x), 100)
     y_recta = m * x_recta + b
 

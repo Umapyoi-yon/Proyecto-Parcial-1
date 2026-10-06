@@ -12,9 +12,7 @@ Fecha: [5/10/2026]
 
 import numpy as np
 
-
-def leer_datos(ruta_archivo):
-    """Lee muestras (x, y) de un archivo de texto separado por comas.
+"""Lee muestras (x, y) de un archivo de texto separado por comas.
 
     El archivo puede tener o no una linea de encabezado (por ejemplo "x,y").
 
@@ -27,7 +25,9 @@ def leer_datos(ruta_archivo):
     Raises:
         FileNotFoundError: Si el archivo no existe.
         ValueError: Si el formato es invalido o hay menos de 2 muestras.
-    """
+"""
+def leer_datos(ruta_archivo):
+    
     x_lista, y_lista = [], []
 
     with open(ruta_archivo, "r", encoding="utf-8") as archivo:
